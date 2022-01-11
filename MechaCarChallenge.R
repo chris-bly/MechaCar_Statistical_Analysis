@@ -37,3 +37,29 @@ lot_summary
 
 # Deliverable 3 Code
 
+# 1. In your MechaCarChallenge.RScript, write an RScript using the t.test() function to determine if the PSI across all manufacturing lots is statistically 
+  # from the population mean of 1,500 pounds per square inch.
+sample_table <- coil_table %>% sample_n(50) #randomly sample 50 data points
+plt <- ggplot(sample_table,aes(x=PSI)) #import sample dataset into ggplot2
+plt + geom_density() #visualize distribution using density plot
+
+t.test(sample_table$PSI,mu=mean(coil_table$PSI)) #compare sample versus population means
+
+
+# 2. Next, write three more RScripts in your MechaCarChallenge.RScript using the t.test() function and its subset() argument to determine if the PSI for 
+  # each manufacturing lot is statistically different from the population mean of 1,500 pounds per square inch.
+sample_lot1_table <- coil_table %>% subset(Manufacturing_Lot=='Lot1') %>% sample_n(30)
+
+t.test(sample_lot1_table$PSI, mu=mean(1500))
+t.test(sample_lot1_table$PSI, mu=mean(coil_table$PSI))
+
+sample_lot2_table <- coil_table %>% subset(Manufacturing_Lot=='Lot2') %>% sample_n(30)
+
+t.test(sample_lot2_table$PSI, mu=mean(1500))
+t.test(sample_lot2_table$PSI, mu=mean(coil_table$PSI))
+
+sample_lot3_table <- coil_table %>% subset(Manufacturing_Lot=='Lot3') %>% sample_n(30)
+
+t.test(sample_lot3_table$PSI, mu=mean(1500))
+t.test(sample_lot3_table$PSI, mu=mean(coil_table$PSI))
+
