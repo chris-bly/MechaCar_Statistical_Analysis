@@ -16,7 +16,8 @@ The objective of this challenge was to utilize the R programming language to per
 **Summary of Suspension Coils by Manufacturing Lot**<br>
 <kbd>![Summary of Suspension Coils by Manufacturing Lot](Resources/by_lot_mfg_summary.png)</kbd>
 
-- The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+- The summary table of all suspension coils shows that the entire supply falls within the dictated variance threshold for suspension coils of 100 pounds per square inch (PSI), with variance of 63.2 PSI.
+- When the suspension coils are divided by manufacturing lots, we see that there is non-trivial differentiation between the lots and their specifications. The variances for Lots 1 (0.98 PSI) and 2 (7.47 PSI) fall well within the acceptable range, but Lot 3 has a variance of 170.29 PSI which is well outside the acceptable threshold of 100 PSI. Some review should be performed of the starting materials, processes, and machinery used in Lot 3 to better understand what has caused such inconsistency in the suspension coils.
 
 ### Deliverable 3: t-Tests on Suspension Coils
 **t-Test of All Suspension Coils vs. Population Mean of 1500 Pounds per Square Inch (PSI)**<br>
