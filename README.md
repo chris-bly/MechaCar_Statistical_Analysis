@@ -19,7 +19,15 @@ The objective of this challenge was to utilize the R programming language to per
 - The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 
 ### Deliverable 3: t-Tests on Suspension Coils
-**t-Test of All Suspension Coils vs. Population Mean of 1500 Pounds per Square Inch (PSI)<br>
+**t-Test of All Suspension Coils vs. Population Mean of 1500 Pounds per Square Inch (PSI)**<br>
 <kbd>![t-Test of all suspension coils](Resources/t-test_all_lots.png)</kbd>
 
+**t-Test of Lot 1 Suspension Coils vs. Population Mean of 1500 PSI**<br>
+<kbd>![t-Test of Lot 1 suspension coils](Resources/t-test_lot1.png)</kbd>
+
+**t-Test of Lot 2 Suspension Coils vs. Population Mean of PSI**<br>
+<kbd>![t-Test of Lot 2 suspension coils](Resources/t-test_lot2.png)</kbd>
+
+**t-Test of Lot 3 Suspension Coils vs. Population Mean of 1500 PSI**<br>
+<kbd>![t-Test of Lot 3 suspension coils](Resources/t-test_lot3.png)</kbd>
 - briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
