@@ -5,9 +5,9 @@ The objective of this challenge was to utilize the R programming language to per
 ## Results
 ### Deliverable 1: Linear Regression to Predict MPG
 <kbd>![Linear Regression of MPG Data](Resources/linear_regression.png)</kbd>
-- Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
-- Is the slope of the linear model considered to be zero? Why or why not?
-- Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+- We find that vehicle length and ground clearance variables both present a statistically significant (p<0.001) amount of variance to the MPG values found in the dataset. In addition, the intercept is statistically significant (p<0.001) and provides a non-random amount of variance to the MPG values. The multi-linear model is as follows:<br>```mpg = 6.27*vehicle_length + 1.25e-3*vehicle_weight + 6.88e-2*spoiler_angle + 3.55*ground_clearance - 3.41*AWD - 1.40e-2```
+- We can conclude that the slope of the linear model is not zero based upon the p-value of 5.35e-11 for the linear regression analysis, which is much lower than the 0.05% assumed significance level. This allows us to reject the null hypothesis and conclude the slope is not zero.
+- We find that this linear model presents a strong correlation between the linear model and MPG of MechaCar Protitypes. The linear model predicts 71.5% of the variance in MPG based on a relatively limited number of measurements per each prototype car. 
 
 ### Deliverable 2: Summary Statistics on Suspension Coils
 **Summary of All Suspension Coils**<br>
