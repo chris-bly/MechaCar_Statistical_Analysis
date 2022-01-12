@@ -20,18 +20,26 @@ The objective of this challenge was to utilize the R programming language to per
 - When the suspension coils are divided by manufacturing lots, we see that there is non-trivial differentiation between the lots and their specifications. The variances for Lots 1 (0.98 PSI) and 2 (7.47 PSI) fall well within the acceptable range, but Lot 3 has a variance of 170.29 PSI which is well outside the acceptable threshold of 100 PSI. Some review should be performed of the starting materials, processes, and machinery used in Lot 3 to better understand what has caused such inconsistency in the suspension coils.
 
 ### Deliverable 3: t-Tests on Suspension Coils
-**t-Test of All Suspension Coils vs. Population Mean of 1500 Pounds per Square Inch (PSI)**<br>
+**t-Test of All Suspension Coils vs. Population Mean of 1500 PSI**<br>
 <kbd>![t-Test of all suspension coils](Resources/t-test_all_lots.png)</kbd>
+
+- The mean PSI of a sample of all suspension coils was found to be 1499.24 PSI. A t-test comparing all suspension coils to the stated 1500 PSI population mean found no statistically significant difference (p=0.5993) between the measured mean PSI and the specification for the population PSI. The null hypothesis cannot be rejected, indicating that sampling introduced no variance compared to the entire set of suspension coils. 
+- _NOTE: It should be pointed out that the mean of the entire set was not 1500 PSI but rather 1498.78 PSI. If the intent was to present all t-tests compared to the true mean value, those calculations have been commented out in the code and can be quickly included. They will have no impact on the statistical significance of the results._
 
 **t-Test of Lot 1 Suspension Coils vs. Population Mean of 1500 PSI**<br>
 <kbd>![t-Test of Lot 1 suspension coils](Resources/t-test_lot1.png)</kbd>
 
+- A t-test of the mean PSI of a sample of half the Lot 1 suspension coils compared to the population mean of 1500 PSI demonstrates a p-value of 0.86, indicating that we cannot reject the null hypothesis at a significance threshold of 0.05%. We can conclude there is no measureable variance between Lot 1 and the population mean.
+
 **t-Test of Lot 2 Suspension Coils vs. Population Mean of PSI**<br>
 <kbd>![t-Test of Lot 2 suspension coils](Resources/t-test_lot2.png)</kbd>
 
+- A t-test of the mean PSI of a sample of half the Lot 2 suspension coils compared to the population mean of 1500 PSI demonstrates a p-value of 0.57, indicating that we cannot reject the null hypothesis at a significance threshold of 0.05%. We can conclude there is no measureable variance between Lot 2 and the population mean.
+
 **t-Test of Lot 3 Suspension Coils vs. Population Mean of 1500 PSI**<br>
 <kbd>![t-Test of Lot 3 suspension coils](Resources/t-test_lot3.png)</kbd>
-- briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
+
+- A t-test of the mean PSI of a sample of half the Lot 3 suspension coils compared to the population mean of 1500 PSI demonstrates a p-value of 0.39, indicating that we cannot reject the null hypothesis at a significance threshold of 0.05%. We can conclude there is no measureable variance between Lot 3 and the population mean.
 
 ### Deliverable 4: Study Design: MechaCar vs Competition
 Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
